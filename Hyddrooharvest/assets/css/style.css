@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* variables */
+:root{
+    --primary-color: #497B12;
+    --primary-color-light: #7EB741;
+    --secondary-color: #36A3CA;
+    --secondary-color-light: #73BCD6;
+    --white: #FDFDFD;
+    --black: #141414;
+    --black-light: #383938;
+    --grey: #818281;
+    --grey-light: #C9D3D3;
+} 
+
+:root{
+    scroll-behavior: smooth;
+}
+
+
+/* General styles */
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.section-padding{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.section-title{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.section-title h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--black);
+    font-family: "Nunito", sans-serif;
+}
+
+.section-title h6{
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    color: var(--primary-color);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.btn{
+    padding: 15px 32px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: var(--secondary-color-light);
+    transition-duration: 2s;
+    color: var(--white);
+}
+
+
+
+/* Header section */
+.header{
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.header .nav .logo h3{
+    color: var(--white);
+    align-self: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header .nav{
+    padding: 10px 0 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.header .nav .menu-content .menu-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .nav .menu-content .menu-list li a{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header .nav .menu-content .menu-list li a:not(:first-child){
+    padding-left: 10px;
+}
+
+.header .nav .menu-content .menu-list li a:hover{
+    color: var(--secondary-color-light);
+}
+
+.header .nav .menu-content .menu-list li .active{
+    color: var(--secondary-color-light);
+}
+
+
+/* Home section */
+main .home .hero{
+    background-image: url('../images/hero.jpg'), linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    display: flex;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .home .hero .hero-content .hero-title h1{
+    color: var(--white);
+    font-size: 56px;
+    padding-bottom: 4px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+main .home .hero .hero-content .hero-title h1 span{
+    color: var(--primary-color-light);
+}
+
+main .home .hero .hero-content p{
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 300;
+    font-family: "Nunito", sans-serif;
+    padding-bottom: 24px;
+}
+
+main .home .hero .hero-content a{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+/* About section */
+main .about .row{
+    align-items: center;
+    padding: 0 100px;
+}
+
+main .about .about-content .section-title h2{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    color: var(--black);
+}
+
+main .about .about-content .section title h6{
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+main .about .about-content p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+main .about .about-content a{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+main .about .about-content a:hover{
+    color: var(--secondary-color-light);
+}
+
+main .about img{
+    border-radius: 30px;
+    height: 450px;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+
+/* Mission section */
+main .mission .row{
+    align-items: center;
+    padding: 0 100px;
+}
+
+main .mission img{
+    height: 450px;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+main .mission .mission-content{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+main .mission .mission-content a{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+main .mission .mission-content a:hover{
+    color: var(--secondary-color-light);
+}
+
+
+/* Services section */
+.services .services-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 0 100px;
+}
+
+.services .services-content .box{
+    padding: 40px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    color: var(--white);
+    text-align: center;
+}
+
+.services .services-content .box .icon i{
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+.services .services-content h4{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+}
+
+.services .services-content ul{
+    margin: 0;
+    padding: 0;
+}
+
+.services .services-content ul li{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    list-style: none;
+}
+
+/* SDGs section */
+.sdgs{
+    background-color: var(--primary-color);
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.sdgs .sdg-container{
+    display: flex;
+    gap: 20px;
+    align-items: top;
+}
+
+.sdgs .sdg-container img{
+    width: 100px;
+    height: 100px;
+}
+
+.sdgs .sdg-container p{
+    font-size: 16px;
+    color: var(--white);
+    font-weight: 300;
+}
+
+
+/* Climate change section */
+.climate-change .row{
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.climate-change .climate-change-img img{
+    height: 450px;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.climate-change .climate-change-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+    font-family: "Nunito", sans-serif;
+}
+
+
+/* Contact section */
+.contact{
+    padding: 60px 0 100px 0;
+}
+
+.contact .contact-content{
+    padding: 50px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact .contact-content h2{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Nunito", sans-serif;
+    color: var(--white);
+}
+
+
+/* Footer section */
+footer{
+    background-color: var(--primary-color);
+}
+
+footer .row{
+    padding: 40px 70px;
+}
+
+/* footer .section-1 img{
+    height: 150px;
+    width: 100px;
+} */
+
+footer .section-1 h2{
+    color: var(--white);
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+footer .section-1 p{
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    color: var(--white);
+    font-weight: 400;
+}
+
+footer .section-1 .socials{
+    display: flex;
+    gap: 20px;
+    color: var(--white);
+    flex-direction: row;
+}
+
+footer .section-1 .socials i{
+    font-size: 28px;
+}
+
+footer .section-1 .socials i:hover{
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+footer .section-2 h6{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    color: var(--white);
+    padding-bottom: 15px;
+}
+
+footer .section-2 .links{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .section-2 .links a{
+    color: var(--white);
+    font-size: 16px;
+}
+
+footer .section-2 .links a:hover{
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+footer .section-2 .links a:not(:last-child){
+    padding-bottom: 10px;
+}
+
+footer .section-3 h6{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    color: var(--white);
+    padding-bottom: 15px;
+}
+
+footer .section-3 .email p,
+footer .section-3 .phone p,
+footer .section-3 .location p{
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+}
+
+footer .section-3 .email,
+footer .section-3 .phone,
+footer .section-3 .location{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+footer .section-3 .email:hover,
+footer .section-3 .phone:hover,
+footer .section-3 .location:hover{
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+footer .section-3 .email i,
+footer .section-3 .phone i,
+footer .section-3 .location i{
+    color: var(--white);
+    font-size: 28px;
+}
+
+footer .last-section{
+    padding: 20px 0 10px 0;
+    margin: 0 70px;
+    border-top: 1px solid var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .last-section p{
+    color: var(--white);
+    font-size: 16px;
+}
+
+
+
+
+/* Registration page */
+.register .registration-form{
+    padding: 100px 60px;
+    background-color: rgba(201,211,211,0.6);
+    border-radius: 30px;
+    margin: 0 200px;
+    margin-bottom: 80px;
+}
+
+.register .registration-form .input-group{
+    align-items: center;
+    justify-items: center;
+    display: flex;
+}
+
+.register .registration-form .input-group span{
+    padding: 10px 10px;
+    background-color: #ffffff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: none;
+    color: var(--black);
+}
+
+.form-control:focus{
+    box-shadow: none;
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+::placeholder{
+    font-size: 12px;
+    color: var(--grey);
+}
+
+.register .registration-form .form-label{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+/* Contact page */
+.contact-page .contact-left{
+    padding: 40px 40px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+}
